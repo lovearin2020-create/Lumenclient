@@ -1,0 +1,31 @@
+{
+  "package": "dev.lumen.mixin",
+  "refmap": "mixins.lumen.refmap.json",
+  "minVersion": "0.7.11",
+  "compatibilityLevel": "JAVA_8",
+  "required": false,
+  "client": [
+    "MixinMinecraft",
+    "MixinItemRenderer",
+    "MixinLayerArmorBase",
+    "MixinRendererLivingEntity",
+    "MixinGuiNewChat",
+    "MixinGuiScreen",
+    "MixinGuiIngame",
+    "MixinRenderItem",
+    "MixinEntityRenderer",
+    "MixinRenderManager",
+    "MixinTileEntityRendererDispatcher",
+    "MixinEffectRenderer",
+    "MixinScoreboard",
+    "MixinNetHandlerPlayClient",
+    "MixinRender",
+    "MixinGuiPlayerTabOverlay",
+    "MixinGuiIngameForge",
+    "MixinRenderEntityItem",
+    "MixinEntityLivingBase"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

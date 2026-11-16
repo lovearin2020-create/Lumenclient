@@ -1,0 +1,7 @@
+target/
+build/
+.gradle/
+run/
+*.part
+account.json
+settings.json

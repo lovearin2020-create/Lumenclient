@@ -1,0 +1,30 @@
+[package]
+name = "lumen-launcher"
+version = "1.0.0"
+edition = "2021"
+description = "Lumen Client launcher"
+
+[[bin]]
+name = "LumenClient"
+path = "src/main.rs"
+
+[features]
+# Developer-only: lets the automated Linux test start the game without a Microsoft account.
+# Never enabled in release builds.
+devtest = []
+
+[dependencies]
+eframe = { version = "0.29", default-features = false, features = ["glow", "default_fonts", "x11", "wayland"] }
+egui = "0.29"
+ureq = { version = "2.10", default-features = false, features = ["tls", "native-certs", "json", "gzip"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha1 = "0.10"
+zip = { version = "2", default-features = false, features = ["deflate"] }
+dirs = "5"
+open = "5"
+
+[profile.release]
+opt-level = 2
+lto = "thin"
+strip = true
